@@ -258,7 +258,9 @@ header {
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 50px 20px;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 .menu-grid-cover {
@@ -266,6 +268,7 @@ header {
   height: 430px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .menu-grid-cover img {
@@ -282,11 +285,9 @@ header {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 30px;
-  line-height: 38px;
   text-align: center;
   color: #1b2a49;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin: 0px;
 }
 
 .menu-grid-price {
@@ -297,19 +298,31 @@ header {
   line-height: 28px;
   text-align: center;
   color: #979797;
+  margin-top: 8px;
   margin-bottom: 20px;
 }
 
 .menu-grid-btn {
-  max-width: 152px;
   background-color: #FBB731;
-  border: none;
   border-radius: 5px;
+  padding: 10px 32px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 9px;
+  max-width: 152px; 
   text-align: center;
-  padding: 10px 50px;
-  margin-bottom: 28px
 }
 .menu-grid-icon {
+  background-image: url(../img/cart-button.svg);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 18px;
+  height: 18px;
+
 }
 
 .menu-grid-text {
