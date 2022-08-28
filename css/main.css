@@ -31,6 +31,13 @@ header {
   background-size: cover;
 }
 
+.header-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 68.5%;
+}
+
 .header-nav {
   display: flex;
   list-style-type: none;
@@ -217,7 +224,13 @@ header {
   line-height: 1.8;
   text-align: center;
   text-transform: uppercase;
-  padding: 20px 25px;
+  padding: 18px 23px;
+  border: 1px solid #fbb731;
+}
+
+.banner-button:hover {
+  background-color: transparent;
+  color: #fbb731;
 }
 
 .menu-header {
@@ -303,7 +316,7 @@ header {
 }
 
 .menu-grid-btn {
-  background-color: #FBB731;
+  background-color: #fbb731;
   border-radius: 5px;
   padding: 10px 32px;
   border: none;
@@ -312,9 +325,15 @@ header {
   justify-content: center;
   margin: 0 auto;
   gap: 9px;
-  max-width: 152px; 
+  max-width: 152px;
   text-align: center;
 }
+
+.menu-grid-btn:hover {
+  background-color: #f37335;
+  cursor: pointer;
+}
+
 .menu-grid-icon {
   background-image: url(../img/cart-button.svg);
   background-size: 18px 18px;
@@ -322,7 +341,6 @@ header {
   display: block;
   width: 18px;
   height: 18px;
-
 }
 
 .menu-grid-text {
@@ -337,21 +355,16 @@ header {
 }
 
 .footer {
-  background: #1E2F40;
+  background: #1e2f40;
   color: #fff;
   padding-top: 117px;
   padding-bottom: 106px;
   margin-top: 140px;
 }
 
-.footer-box{
+.footer-box {
   display: flex;
   justify-content: space-between;
-}
-
-.footer-list{
-  padding-left: 0;
-  list-style-type: none;
 }
 
 .footer-logo {
@@ -369,31 +382,48 @@ header {
   margin-top: 0;
 }
 
-.footer-item li {
+.footer-list li {
   margin-bottom: 9px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  color: #FAF9F9;
+  color: #faf9f9;
   font-weight: 700;
   line-height: 24px;
 }
-.footer-item a {
-  color: #DEDEDE;
+.footer-list a {
+  color: #dedede;
   text-decoration: none;
   font-weight: 400;
 }
+
+.footer-list a:hover {
+  color: #fbb731;
+}
+
 .footer-item span {
-  color: #DEDEDE;
+  color: #dedede;
   display: block;
   font-weight: 400;
   margin-bottom: 2px;
 }
-.footer-tel ul {
-  font-size: 20px;
-  color: #FBB731;
+.footer-list-tel {
   margin-top: 0;
+}
+.footer-list-tel a {
+  font-size: 20px;
+  color: #fbb731;
   font-weight: 900;
 }
-.footer-tel li {
+
+.footer-list-tel a:hover {
+  color: #dedede;
+}
+
+.footer-list-tel li {
   margin-bottom: 12px;
+}
+
+.footer-list {
+  padding-left: 0;
+  list-style-type: none;
 }
