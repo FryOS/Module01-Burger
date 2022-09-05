@@ -609,52 +609,6 @@ header {
   }
 }
 
-@media (max-width: 765px) {
-  nav {
-    display: none;
-  }
-
-  .header {
-    gap: 21px;
-  }
-}
-
-@media (max-width: 567px) {
-  .breadcrumbs a{
-    font-size: 15px;
-  }
-  
-  .title{
-    font-size: 38px;
-  }
-
-  .description{
-    font-size: 12px;
-  }
-  .bg{
-    padding: 55px 0; 
-  }
-
-  .banner-box{
-    background-position: 17% center;
-    padding: 35px 24px 54px;
-  }
-}
-
-
-@media (max-width: 360px) {
-  .header-logo {
-    width: 116px;
-    height: 37px;
-    background-size: contain;
-  }
-}
-
-@media (max-width: 230px) {
-  .banner-box{
-    background-position: 25% center;
-  }
-}
 
 @media (max-width: 1000px) {
   .container {
@@ -715,6 +669,140 @@ header {
     display: block;
   }
 }
+
+@media (max-width: 765px) {
+  nav {
+    display: none;
+  }
+
+  .header {
+    gap: 21px;
+  }
+}
+
+@media (max-width: 567px) {
+  .breadcrumbs a{
+    font-size: 15px;
+  }
+  
+  .title{
+    font-size: 38px;
+  }
+
+  .description{
+    font-size: 12px;
+  }
+  .bg{
+    padding: 55px 0; 
+  }
+
+  .banner-box{
+    background-position: 17% center;
+    padding: 35px 24px 54px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-logo {
+    width: 116px;
+    height: 37px;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    min-width: 200px;
+  }
+
+  .menu-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin-bottom: 0px;
+    margin-top: -20px;
+  }
+
+  .menu-title{
+    font-size: 28px;
+  }
+
+  .menu-select {
+    margin-top: 10px;
+    flex-basis: 10px;
+  }
+
+  .header-logo {
+    width: 120px;
+    height: 48px;
+    background-size: contain;
+  }
+  .header-nav {
+    gap: 15px;
+  }
+  .header-item {
+    flex-basis: 75.5%;
+  }
+
+  .bg {
+    margin-bottom: 72px;
+  }
+  .banner-box {
+    background-position: -80px center;
+    padding: 100px 40px 120px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+
+  
+
+  .menu-other {
+    overflow: hidden;
+    height: 558px;
+  }
+  .menu-other .menu-grid {
+    display: flex;
+    width: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 50px;
+  }
+
+  .menu-other .menu-grid-item {
+    flex: 0 0 281px;
+  }
+
+  .menu-other .menu-grid-cover,
+  .menu-grid-item .menu-grid-cover img {
+    height: 320px;
+  }
+
+  .footer-tel {
+    display: none;
+  }
+
+  .footer-list + .footer-list-tel {
+    display: block;
+  }
+
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+}
+
+@media (max-width: 230px) {
+  .banner-box{
+    background-position: 25% center;
+  }
+
+  
+}
+
 
 /* Modal Style*/
 
