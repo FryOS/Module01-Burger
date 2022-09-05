@@ -258,8 +258,8 @@ header {
   color: #443737;
   font-size: 15px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   flex-basis: 279px;
   background-image: url(../img/chevron-down.svg);
   background-repeat: no-repeat;
@@ -295,7 +295,7 @@ header {
   top: 50%;
   transform: translate(-50%, -50%);
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 430px;
   width: 100%;
 }
@@ -596,7 +596,6 @@ header {
 
 /* Responsive */
 
-
 @media (min-width: 1001px) {
   .footer-list + .footer-list-tel {
     display: none;
@@ -608,7 +607,6 @@ header {
     display: none;
   }
 }
-
 
 @media (max-width: 1000px) {
   .container {
@@ -671,6 +669,9 @@ header {
 }
 
 @media (max-width: 765px) {
+  .container {
+    min-width: 200px;
+  }
   nav {
     display: none;
   }
@@ -681,24 +682,34 @@ header {
 }
 
 @media (max-width: 567px) {
-  .breadcrumbs a{
+  .breadcrumbs a {
     font-size: 15px;
   }
-  
-  .title{
+
+  .title {
     font-size: 38px;
   }
 
-  .description{
+  .description {
     font-size: 12px;
   }
-  .bg{
-    padding: 55px 0; 
+  .bg {
+    padding: 55px 0;
   }
 
-  .banner-box{
+  .banner-box {
     background-position: 17% center;
     padding: 35px 24px 54px;
+  }
+
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-item h2 {
+    margin-top: 20px;
   }
 }
 
@@ -715,15 +726,15 @@ header {
     min-width: 200px;
   }
 
-  .menu-header{
+  .menu-header {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     margin-bottom: 0px;
     margin-top: -20px;
   }
 
-  .menu-title{
+  .menu-title {
     font-size: 28px;
   }
 
@@ -754,10 +765,7 @@ header {
 
   .menu-grid {
     grid-template-columns: repeat(1, 1fr);
-    
   }
-
-  
 
   .menu-other {
     overflow: hidden;
@@ -792,17 +800,14 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+  }
 }
 
 @media (max-width: 230px) {
-  .banner-box{
+  .banner-box {
     background-position: 25% center;
   }
-
-  
 }
-
 
 /* Modal Style*/
 
